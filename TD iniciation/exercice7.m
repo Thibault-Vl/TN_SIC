@@ -1,0 +1,10 @@
+p=[1 -8 -32 -13];
+x=[2 pi];
+polyval(p,x);
+roots(p);
+q=[4 0 3];
+conv(p,q);
+[q,r]=deconv(p,q);
+VX=[-5:0.01:12];
+VY=polyval(p,VX);
+plot(VX,VY), title('Valeur de p(x) entre -5 et 12'), xlabel('x'), ylabel('p(x)'), grid;

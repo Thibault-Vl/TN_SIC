@@ -1,0 +1,9 @@
+n=input('Entré un valeur pour une matrice de taille n : ');
+V1=zeros(1,n);
+V1=V1+2;
+V2=zeros(1,n-1);
+V2=V2-1;
+A1=diag(V1,0)
+A2=diag(V2,1)
+A3=diag(V2,-1)
+A=A1+A2+A3
